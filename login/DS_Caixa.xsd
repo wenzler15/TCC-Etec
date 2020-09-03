@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Caixa" targetNamespace="http://tempuri.org/DS_Caixa.xsd" xmlns:mstns="http://tempuri.org/DS_Caixa.xsd" xmlns="http://tempuri.org/DS_Caixa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Caixa" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Caixa" msprop:Generator_UserDSName="DS_Caixa">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Caixa" msprop:Generator_TableClassName="CaixaDataTable" msprop:Generator_TableVarName="tableCaixa" msprop:Generator_RowChangedName="CaixaRowChanged" msprop:Generator_TablePropName="Caixa" msprop:Generator_RowDeletingName="CaixaRowDeleting" msprop:Generator_RowChangingName="CaixaRowChanging" msprop:Generator_RowEvHandlerName="CaixaRowChangeEventHandler" msprop:Generator_RowDeletedName="CaixaRowDeleted" msprop:Generator_RowClassName="CaixaRow" msprop:Generator_UserTableName="Caixa" msprop:Generator_RowEvArgName="CaixaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Total" msprop:Generator_ColumnVarNameInTable="columnCod_Total" msprop:Generator_ColumnPropNameInRow="Cod_Total" msprop:Generator_ColumnPropNameInTable="Cod_TotalColumn" msprop:Generator_UserColumnName="Cod_Total" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Final" msprop:Generator_ColumnVarNameInTable="columnTotal_Final" msprop:Generator_ColumnPropNameInRow="Total_Final" msprop:Generator_ColumnPropNameInTable="Total_FinalColumn" msprop:Generator_UserColumnName="Total_Final" type="xs:string" minOccurs="0" />
+              <xs:element name="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="CaixaKey1">
+      <xs:selector xpath=".//mstns:Caixa" />
+      <xs:field xpath="mstns:Cod_Total" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

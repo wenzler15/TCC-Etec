@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06099921-F50C-4B9F-9838-3DAF213DB57F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendamento.Designer.cs">
+      <DependentUpon>Agendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar.Designer.cs">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarAgendamento.Designer.cs">
+      <DependentUpon>AlterarAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarCadastrar.Designer.cs">
+      <DependentUpon>AlterarCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarCaixa.Designer.cs">
+      <DependentUpon>AlterarCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarFornecedor.Designer.cs">
+      <DependentUpon>AlterarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarTrabalho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarTrabalho.Designer.cs">
+      <DependentUpon>AlterarTrabalho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar.Designer.cs">
+      <DependentUpon>Buscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar2.Designer.cs">
+      <DependentUpon>Buscar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caixa.Designer.cs">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.cs">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Caixa.cs">
+      <DependentUpon>DS_Caixa.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Caixa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Caixa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque.Designer.cs">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor.Designer.cs">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal1.Designer.cs">
+      <DependentUpon>FrmPrincipal1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin1.Designer.cs">
+      <DependentUpon>FrmLogin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal2.Designer.cs">
+      <DependentUpon>FrmPrincipal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmSplash1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash1.Designer.cs">
+      <DependentUpon>FrmSplash1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio.Designer.cs">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sobe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobe.Designer.cs">
+      <DependentUpon>Sobe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabelaPreços.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelaPreços.Designer.cs">
+      <DependentUpon>TabelaPreços.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trabalho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trabalho.Designer.cs">
+      <DependentUpon>Trabalho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Agendamento.resx">
+      <DependentUpon>Agendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar.resx">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarAgendamento.resx">
+      <DependentUpon>AlterarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarCadastrar.resx">
+      <DependentUpon>AlterarCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarCaixa.resx">
+      <DependentUpon>AlterarCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarFornecedor.resx">
+      <DependentUpon>AlterarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarTrabalho.resx">
+      <DependentUpon>AlterarTrabalho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar.resx">
+      <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar2.resx">
+      <DependentUpon>Buscar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caixa.resx">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque.resx">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor.resx">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal1.resx">
+      <DependentUpon>FrmPrincipal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin1.resx">
+      <DependentUpon>FrmLogin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal2.resx">
+      <DependentUpon>FrmPrincipal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash1.resx">
+      <DependentUpon>FrmSplash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio.resx">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCaixa.rdlc" />
+    <EmbeddedResource Include="Sobe.resx">
+      <DependentUpon>Sobe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelaPreços.resx">
+      <DependentUpon>TabelaPreços.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trabalho.resx">
+      <DependentUpon>Trabalho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DS_Caixa.xsc">
+      <DependentUpon>DS_Caixa.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Caixa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Caixa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Caixa.xss">
+      <DependentUpon>DS_Caixa.xsd</DependentUpon>
+    </None>
+    <None Include="ManualAdm.pdf" />
+    <None Include="ManualFunc.pdf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Calculadora_%28Windows%29-pt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Calculadora_%28Windows%29-pt.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_register_91371.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedor3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Calculadora_%28Windows%29-pt1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rosa-Vermelha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flores3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flores2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flores21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabelo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabelo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabelo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogin2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogin21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgUsers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Calculadora_%28Windows%29-pt2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedor11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caixa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caixa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dinheiro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Calculadora_%28Windows%29-pt3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Calculadora_%28Windows%29-pt4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fecaahar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flores31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MovvHair.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Facebook.png" />
+    <None Include="Resources\AgendamentoCerto.jpg" />
+    <None Include="Resources\AdicionarCert.jpg" />
+    <None Include="Resources\yo.jpg" />
+    <None Include="Resources\go.jpg" />
+    <None Include="Resources\botaonovos21.jpg" />
+    <None Include="Resources\botaosds12.jpg" />
+    <None Include="Resources\selcuser.jpg" />
+    <None Include="Resources\Users.JPG" />
+    <None Include="Resources\328.GIF" />
+    <None Include="Resources\Relat.png" />
+    <None Include="Resources\buscarazul.png" />
+    <None Include="Resources\Cadastazul.png" />
+    <None Include="Resources\Relatório.jpg" />
+    <None Include="Resources\Sem título.png" />
+    <None Include="Resources\DESKTOPCERTO2.jpg" />
+    <None Include="Resources\TELASERVIÇSOASOSOS.jpg" />
+    <None Include="Resources\Sem Título-3.png" />
+    <None Include="Resources\calculaaaa22.jpg" />
+    <None Include="Resources\telapreços.jpg" />
+    <None Include="Resources\EstoqueTela.jpg" />
+    <None Include="Resources\Agendmamam.jpg" />
+    <None Include="Resources\addbtn.jpg" />
+    <None Include="Resources\Serviço.jpg" />
+    <None Include="Resources\AboutCerto.jpg" />
+    <None Include="Resources\CALCMDS.jpg" />
+    <None Include="Resources\forntela11.jpg" />
+    <None Include="Resources\FornecedoresTELA.jpg" />
+    <None Include="Resources\CADASTROTELA.jpg" />
+    <None Include="Resources\CADASTRARbtn.jpg" />
+    <None Include="Resources\CADASTRO.jpg" />
+    <None Include="Resources\preto4.jpg" />
+    <None Include="Resources\preto5.jpg" />
+    <None Include="Resources\preto2.jpg" />
+    <None Include="Resources\preto3.jpg" />
+    <None Include="Resources\preto1.jpg" />
+    <None Include="Resources\CALZIN1.jpg" />
+    <None Include="Resources\Caixa.jpg" />
+    <None Include="Resources\Listar.jpg" />
+    <None Include="Resources\limpar2.jpg" />
+    <None Include="Resources\final.jpg" />
+    <None Include="Resources\Saida.jpg" />
+    <None Include="Resources\Entrada.jpg" />
+    <None Include="Resources\Caixar.jpg" />
+    <None Include="Resources\CasaBranca2.png" />
+    <None Include="Resources\CasaBranca.png" />
+    <None Include="Resources\SalvarBranco.jpg" />
+    <None Include="Resources\Fornfoi.jpg" />
+    <None Include="Resources\SALVARFOI.jpg" />
+    <None Include="Resources\SALVARCERTO.jpg" />
+    <None Include="Resources\SALVAR.jpg" />
+    <None Include="Resources\FORNZIN.jpg" />
+    <None Include="Resources\limparfcerto.jpg" />
+    <None Include="Resources\limpar.jpg" />
+    <None Include="Resources\porcentagem.jpg" />
+    <None Include="Resources\vezes.jpg" />
+    <None Include="Resources\divisão.jpg" />
+    <None Include="Resources\MENOS.jpg" />
+    <None Include="Resources\maiz.jpg" />
+    <None Include="Resources\MAIS.jpg" />
+    <None Include="Resources\CALCZIN.jpg" />
+    <None Include="Resources\closear.png" />
+    <None Include="Resources\fechar1.png" />
+    <None Include="Resources\BOTA1.jpg" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\About.jpg" />
+    <None Include="Resources\agendaaazul.png" />
+    <None Include="Resources\BOTA3.jpg" />
+    <None Include="Resources\Desktopcerto.jpg" />
+    <None Include="Resources\Desktop2.jpg" />
+    <None Include="Resources\home1.png" />
+    <None Include="Resources\preços1.png" />
+    <None Include="Resources\fornazul.png" />
+    <None Include="Resources\azul.png" />
+    <None Include="Resources\LOGIN1CERTO.jpg" />
+    <None Include="Resources\Usercerto.jpg" />
+    <None Include="Resources\LOGIN2CERTO.jpg" />
+    <None Include="Resources\SPLASHCERTA.jpg" />
+    <None Include="Resources\Desktop.jpg" />
+    <None Include="Resources\Sem Título-12.jpg" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\agendamentnens.png" />
+    <None Include="Resources\FOAGEND.png" />
+    <None Include="Resources\AGENDAM.png" />
+    <None Include="Resources\agendamento.png" />
+    <None Include="Resources\addtrab.png" />
+    <None Include="Resources\trab.png" />
+    <None Include="Resources\estoque.png" />
+    <None Include="Resources\cadastrar.png" />
+    <None Include="Resources\preços.png" />
+    <None Include="Resources\CAXAX.png" />
+    <None Include="Resources\forn1.png" />
+    <None Include="Resources\calc.png" />
+    <None Include="Resources\Sem Título-11.jpg" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\Sem Título-1.jpg" />
+    <None Include="Resources\voltar3.jpg" />
+    <None Include="Resources\SAER2.jpg" />
+    <None Include="Resources\Entrar2.jpg" />
+    <None Include="Resources\LOGIN2.jpg" />
+    <None Include="Resources\VOLTAR.jpg" />
+    <None Include="Resources\saer.jpg" />
+    <None Include="Resources\Entrar1.jpg" />
+    <None Include="Resources\LOGIN.jpg" />
+    <None Include="Resources\atendimento.png" />
+    <None Include="Resources\palestrante.png" />
+    <None Include="Resources\close-icon.png" />
+    <None Include="Resources\User.jpg" />
+    <None Include="Resources\reload.gif" />
+    <None Include="Resources\SPLASH.jpg" />
+    <None Include="Resources\2.GIF" />
+    <None Include="Resources\77.GIF" />
+    <None Include="Resources\294.GIF" />
+    <None Include="Resources\3601.GIF" />
+    <None Include="Resources\360.GIF" />
+    <None Include="Resources\728.GIF" />
+    <None Include="Resources\11.PNG" />
+    <None Include="Resources\1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
